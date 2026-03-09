@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="card">
+    <h1>欢迎来到眼镜店</h1>
+    <text>我们提供高品质的眼镜产品和专业的验光服务</text>
+  </view>
+  
+  <view class="card">
+    <h1>热门产品</h1>
+    <view class="product-list">
+      <view class="product-item" wx:for="{{products}}" wx:key="index">
+        <view class="product-image"></view>
+        <view class="product-info">
+          <view class="product-name">{{item.name}}</view>
+          <view class="product-price">¥{{item.price}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

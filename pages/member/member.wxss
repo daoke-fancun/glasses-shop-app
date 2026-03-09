@@ -1,0 +1,191 @@
+/* 会员中心页面样式 */
+.container {
+  padding: 16rpx;
+  background-color: #f5f9ff;
+  min-height: 100vh;
+}
+
+/* 视力档案卡片 */
+.vision-card {
+  background-color: white;
+  border-radius: 12rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.08);
+  margin-bottom: 24rpx;
+  overflow: hidden;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+  background-color: #1a73e8;
+  color: white;
+}
+
+.card-title {
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.card-date {
+  font-size: 24rpx;
+}
+
+.card-body {
+  padding: 20rpx;
+}
+
+.vision-data {
+  margin-bottom: 20rpx;
+}
+
+.data-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16rpx;
+  padding: 12rpx 0;
+  border-bottom: 1rpx solid #e0e0e0;
+}
+
+.data-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.data-label {
+  font-size: 28rpx;
+  color: #666;
+  min-width: 80rpx;
+}
+
+.data-value {
+  display: flex;
+  gap: 32rpx;
+}
+
+.eye-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.eye-label {
+  font-size: 20rpx;
+  color: #999;
+  margin-bottom: 4rpx;
+}
+
+.eye-value {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333;
+}
+
+.pd-value {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333;
+}
+
+.card-footer {
+  margin-top: 24rpx;
+  padding-top: 20rpx;
+  border-top: 1rpx solid #e0e0e0;
+}
+
+.view-report-btn {
+  display: block;
+  width: 100%;
+  padding: 16rpx;
+  background-color: #e3f2fd;
+  color: #1a73e8;
+  text-align: center;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.view-report-btn:hover {
+  background-color: #bbdefb;
+  transform: translateY(-2rpx);
+  box-shadow: 0 4rpx 8rpx rgba(26, 115, 232, 0.2);
+}
+
+/* 会员信息 */
+.member-info {
+  background-color: white;
+  border-radius: 12rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.08);
+  margin-bottom: 24rpx;
+  overflow: hidden;
+}
+
+.info-header {
+  padding: 20rpx;
+  background-color: #f5f5f5;
+  border-bottom: 1rpx solid #e0e0e0;
+}
+
+.info-title {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.info-body {
+  padding: 20rpx;
+}
+
+/* 电商板块 */
+.ecommerce-section {
+  background-color: white;
+  border-radius: 12rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.section-header {
+  padding: 20rpx;
+  background-color: #f5f5f5;
+  border-bottom: 1rpx solid #e0e0e0;
+}
+
+.section-title {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.order-types {
+  display: flex;
+  justify-content: space-around;
+  padding: 24rpx 0;
+}
+
+.order-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8rpx;
+}
+
+.order-icon {
+  width: 80rpx;
+  height: 80rpx;
+  background-color: #f0f7ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20rpx;
+  color: #1a73e8;
+  margin-bottom: 8rpx;
+}
+
+.order-label {
+  font-size: 24rpx;
+  color: #333;
+}

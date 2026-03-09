@@ -1,0 +1,87 @@
+/* 验光记录列表页面样式 */
+.container {
+  padding: 16rpx;
+}
+
+.record-item {
+  background-color: white;
+  border-radius: 8rpx;
+  margin-bottom: 16rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.record-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 16rpx 20rpx;
+  background-color: #f9f9f9;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+
+.record-date {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.record-name {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.record-table {
+  width: 100%;
+  border-top: 1rpx solid #f0f0f0;
+}
+
+.table-row {
+  display: flex;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+
+.table-row:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.col {
+  flex: 1;
+  padding: 16rpx;
+  text-align: center;
+  font-size: 28rpx;
+}
+
+.col-project {
+  flex: 1.5;
+  text-align: left;
+  font-weight: 500;
+  background-color: #f0f0f0;
+}
+
+.col-eye {
+  flex: 1;
+  text-align: center;
+}
+
+[colspan="2"] {
+  flex: 2;
+  text-align: center;
+}
+
+.empty {
+  text-align: center;
+  padding: 100rpx 0;
+  color: #999;
+  font-size: 28rpx;
+}
+
+h1 {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 16rpx;
+  padding: 0 16rpx;
+}

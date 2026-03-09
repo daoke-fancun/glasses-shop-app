@@ -1,0 +1,196 @@
+/* 详细验光报告页面样式 */
+.container {
+  padding: 16rpx;
+  background-color: #f5f9ff;
+}
+
+.report-card {
+  background-color: white;
+  border-radius: 12rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.08);
+  margin-bottom: 24rpx;
+  overflow: hidden;
+}
+
+.report-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+  background-color: #1a73e8;
+  color: white;
+}
+
+.report-title {
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.report-date {
+  font-size: 24rpx;
+}
+
+.report-body {
+  padding: 20rpx;
+}
+
+.patient-info {
+  margin-bottom: 24rpx;
+  padding-bottom: 16rpx;
+  border-bottom: 1rpx solid #e0e0e0;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8rpx;
+}
+
+.info-label {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.info-value {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333;
+}
+
+.eye-data {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24rpx;
+  gap: 20rpx;
+}
+
+.eye-section {
+  flex: 1;
+  padding: 16rpx;
+  background-color: #f9f9f9;
+  border-radius: 8rpx;
+}
+
+.eye-title {
+  font-size: 28rpx;
+  font-weight: bold;
+  margin-bottom: 16rpx;
+  color: #1a73e8;
+  text-align: center;
+}
+
+.data-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12rpx;
+  padding: 8rpx 0;
+  border-bottom: 1rpx solid #e0e0e0;
+}
+
+.data-row:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.data-label {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.data-value {
+  font-size: 24rpx;
+  font-weight: 500;
+  color: #333;
+}
+
+.pd-section {
+  margin-bottom: 24rpx;
+  padding: 16rpx;
+  background-color: #f9f9f9;
+  border-radius: 8rpx;
+}
+
+.remark-section {
+  margin-top: 20rpx;
+  padding: 16rpx;
+  background-color: #f0f7ff;
+  border-radius: 8rpx;
+  border-left: 4rpx solid #1a73e8;
+}
+
+.section-title {
+  font-size: 26rpx;
+  font-weight: 500;
+  margin-bottom: 8rpx;
+  color: #1a73e8;
+}
+
+.remark-content {
+  font-size: 24rpx;
+  line-height: 1.5;
+  color: #333;
+}
+
+.history-section {
+  background-color: white;
+  border-radius: 12rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.08);
+  padding: 20rpx;
+}
+
+h1 {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+  color: #333;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28rpx;
+  font-weight: bold;
+  margin-bottom: 16rpx;
+  color: #333;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16rpx 0;
+  border-bottom: 1rpx solid #e0e0e0;
+}
+
+.history-item:last-child {
+  border-bottom: none;
+}
+
+.history-date {
+  font-size: 24rpx;
+  color: #666;
+  min-width: 120rpx;
+}
+
+.history-data {
+  display: flex;
+  gap: 32rpx;
+}
+
+.history-sph,
+.history-cyl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.history-label {
+  font-size: 20rpx;
+  color: #999;
+  margin-bottom: 4rpx;
+}
+
+.history-value {
+  font-size: 24rpx;
+  font-weight: 500;
+  color: #333;
+}

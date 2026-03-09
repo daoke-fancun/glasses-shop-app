@@ -1,0 +1,72 @@
+<view class="container">
+  <view class="card">
+    <h1>验光数据记录</h1>
+    
+    <view class="form-item">
+      <view class="form-label">用户姓名</view>
+      <input class="form-input" placeholder="请输入姓名" bindinput="bindNameInput" value="{{name}}" />
+    </view>
+    
+    <view class="form-item">
+      <view class="form-label">检查日期</view>
+      <input class="form-input" placeholder="请选择日期" bindtap="bindDatePicker" value="{{date}}" />
+    </view>
+    
+    <view class="section">
+      <view class="section-title">左眼</view>
+      <view class="row">
+        <view class="col">
+          <view class="form-label">球镜 (SPH)</view>
+          <input class="form-input" placeholder="-3.00" bindinput="bindLeftSphInput" value="{{leftEye.sph}}" />
+        </view>
+        <view class="col">
+          <view class="form-label">柱镜 (CYL)</view>
+          <input class="form-input" placeholder="-0.50" bindinput="bindLeftCylInput" value="{{leftEye.cyl}}" />
+        </view>
+        <view class="col">
+          <view class="form-label">轴位 (AXIS)</view>
+          <input class="form-input" placeholder="180" bindinput="bindLeftAxisInput" value="{{leftEye.axis}}" />
+        </view>
+      </view>
+    </view>
+    
+    <view class="section">
+      <view class="section-title">右眼</view>
+      <view class="row">
+        <view class="col">
+          <view class="form-label">球镜 (SPH)</view>
+          <input class="form-input" placeholder="-3.00" bindinput="bindRightSphInput" value="{{rightEye.sph}}" />
+        </view>
+        <view class="col">
+          <view class="form-label">柱镜 (CYL)</view>
+          <input class="form-input" placeholder="-0.50" bindinput="bindRightCylInput" value="{{rightEye.cyl}}" />
+        </view>
+        <view class="col">
+          <view class="form-label">轴位 (AXIS)</view>
+          <input class="form-input" placeholder="180" bindinput="bindRightAxisInput" value="{{rightEye.axis}}" />
+        </view>
+      </view>
+    </view>
+    
+    <view class="section">
+      <view class="section-title">瞳距</view>
+      <view class="row">
+        <view class="col">
+          <view class="form-label">左眼瞳距 (PD-L)</view>
+          <input class="form-input" placeholder="31" bindinput="bindLeftPdInput" value="{{pd.left}}" />
+        </view>
+        <view class="col">
+          <view class="form-label">右眼瞳距 (PD-R)</view>
+          <input class="form-input" placeholder="31" bindinput="bindRightPdInput" value="{{pd.right}}" />
+        </view>
+      </view>
+    </view>
+    
+    <view class="form-item">
+      <view class="form-label">备注</view>
+      <textarea class="form-input" placeholder="请输入备注信息" bindinput="bindRemarkInput" value="{{remark}}" style="height: 120rpx;" />
+    </view>
+    
+    <view class="btn" bindtap="submitOptometry">保存验光数据</view>
+  </view>
+</view>

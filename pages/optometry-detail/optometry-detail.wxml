@@ -1,0 +1,86 @@
+<view class="container">
+  <h1>详细验光报告</h1>
+  
+  <view class="report-card">
+    <view class="report-header">
+      <view class="report-title">验光数据</view>
+      <view class="report-date">{{reportData.date}}</view>
+    </view>
+    
+    <view class="report-body">
+      <view class="patient-info">
+        <view class="info-item">
+          <view class="info-label">姓名</view>
+          <view class="info-value">{{reportData.name}}</view>
+        </view>
+      </view>
+      
+      <view class="eye-data">
+        <view class="eye-section">
+          <view class="eye-title">左眼</view>
+          <view class="data-row">
+            <view class="data-label">球镜 (SPH)</view>
+            <view class="data-value">{{reportData.leftEye.sph}}</view>
+          </view>
+          <view class="data-row">
+            <view class="data-label">柱镜 (CYL)</view>
+            <view class="data-value">{{reportData.leftEye.cyl}}</view>
+          </view>
+          <view class="data-row">
+            <view class="data-label">轴位 (AXIS)</view>
+            <view class="data-value">{{reportData.leftEye.axis}}</view>
+          </view>
+        </view>
+        
+        <view class="eye-section">
+          <view class="eye-title">右眼</view>
+          <view class="data-row">
+            <view class="data-label">球镜 (SPH)</view>
+            <view class="data-value">{{reportData.rightEye.sph}}</view>
+          </view>
+          <view class="data-row">
+            <view class="data-label">柱镜 (CYL)</view>
+            <view class="data-value">{{reportData.rightEye.cyl}}</view>
+          </view>
+          <view class="data-row">
+            <view class="data-label">轴位 (AXIS)</view>
+            <view class="data-value">{{reportData.rightEye.axis}}</view>
+          </view>
+        </view>
+      </view>
+      
+      <view class="pd-section">
+        <view class="data-row">
+          <view class="data-label">左眼瞳距 (PD-L)</view>
+          <view class="data-value">{{reportData.pd.left}}</view>
+        </view>
+        <view class="data-row">
+          <view class="data-label">右眼瞳距 (PD-R)</view>
+          <view class="data-value">{{reportData.pd.right}}</view>
+        </view>
+      </view>
+      
+      <view class="remark-section" wx:if="{{reportData.remark}}">
+        <view class="section-title">备注</view>
+        <view class="remark-content">{{reportData.remark}}</view>
+      </view>
+    </view>
+  </view>
+  
+  <view class="history-section">
+    <h2>历史记录</h2>
+    <view class="history-item" wx:for="{{historyRecords}}" wx:key="index">
+      <view class="history-date">{{item.date}}</view>
+      <view class="history-data">
+        <view class="history-sph">
+          <view class="history-label">球镜</view>
+          <view class="history-value">{{item.leftEye.sph}} / {{item.rightEye.sph}}</view>
+        </view>
+        <view class="history-cyl">
+          <view class="history-label">柱镜</view>
+          <view class="history-value">{{item.leftEye.cyl}} / {{item.rightEye.cyl}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

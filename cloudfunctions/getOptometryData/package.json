@@ -1,0 +1,19 @@
+{
+  "name": "getOptometryData",
+  "version": "1.0.0",
+  "description": "获取验光数据的云函数",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wechat",
+    "cloud",
+    "optometry"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "wx-server-sdk": "latest"
+  }
+}

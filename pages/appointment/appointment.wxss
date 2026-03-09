@@ -1,0 +1,40 @@
+/* 预约页样式 */
+.container {
+  padding: 16rpx;
+}
+
+.appointment-form {
+  background-color: white;
+  border-radius: 8rpx;
+  padding: 20rpx;
+  box-shadow: 0 2rpx 8rpx rgba(0, 0, 0, 0.1);
+}
+
+.form-item {
+  margin-bottom: 20rpx;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8rpx;
+  font-size: 28rpx;
+}
+
+.form-input {
+  width: 100%;
+  padding: 16rpx;
+  border: 1rpx solid #e8e8e8;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 20rpx;
+  background-color: #1a73e8;
+  color: white;
+  text-align: center;
+  border-radius: 8rpx;
+  margin-top: 20rpx;
+}

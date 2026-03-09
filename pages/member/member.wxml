@@ -1,0 +1,96 @@
+<view class="container">
+  <!-- 视力档案卡片 -->
+  <view class="vision-card">
+    <view class="card-header">
+      <view class="card-title">视力档案</view>
+      <view class="card-date">{{latestRecord.date}}</view>
+    </view>
+    
+    <view class="card-body">
+      <view class="vision-data">
+        <view class="data-item">
+          <view class="data-label">球镜</view>
+          <view class="data-value">
+            <view class="eye-data">
+              <view class="eye-label">左</view>
+              <view class="eye-value">{{latestRecord.leftEye.sph}}</view>
+            </view>
+            <view class="eye-data">
+              <view class="eye-label">右</view>
+              <view class="eye-value">{{latestRecord.rightEye.sph}}</view>
+            </view>
+          </view>
+        </view>
+        
+        <view class="data-item">
+          <view class="data-label">柱镜</view>
+          <view class="data-value">
+            <view class="eye-data">
+              <view class="eye-label">左</view>
+              <view class="eye-value">{{latestRecord.leftEye.cyl}}</view>
+            </view>
+            <view class="eye-data">
+              <view class="eye-label">右</view>
+              <view class="eye-value">{{latestRecord.rightEye.cyl}}</view>
+            </view>
+          </view>
+        </view>
+        
+        <view class="data-item">
+          <view class="data-label">瞳距</view>
+          <view class="data-value pd-value">{{latestRecord.pd}}</view>
+        </view>
+      </view>
+      
+      <view class="card-footer">
+        <view class="view-report-btn" bindtap="navigateToOptometryDetail">查看完整验光报告</view>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 会员信息 -->
+  <view class="member-info">
+    <view class="info-header">
+      <view class="info-title">会员信息</view>
+    </view>
+    <view class="info-body">
+      <view class="info-item">
+        <view class="info-label">会员等级</view>
+        <view class="info-value">普通会员</view>
+      </view>
+      <view class="info-item">
+        <view class="info-label">积分</view>
+        <view class="info-value">120</view>
+      </view>
+      <view class="info-item">
+        <view class="info-label">优惠券</view>
+        <view class="info-value">3张</view>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 电商板块 -->
+  <view class="ecommerce-section">
+    <view class="section-header">
+      <view class="section-title">我的订单</view>
+    </view>
+    <view class="order-types">
+      <view class="order-item">
+        <view class="order-icon">待付款</view>
+        <view class="order-label">待付款</view>
+      </view>
+      <view class="order-item">
+        <view class="order-icon">待发货</view>
+        <view class="order-label">待发货</view>
+      </view>
+      <view class="order-item">
+        <view class="order-icon">待收货</view>
+        <view class="order-label">待收货</view>
+      </view>
+      <view class="order-item">
+        <view class="order-icon">待评价</view>
+        <view class="order-label">待评价</view>
+      </view>
+    </view>
+  </view>
+</view>

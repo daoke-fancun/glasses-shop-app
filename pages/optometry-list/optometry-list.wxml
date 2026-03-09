@@ -1,0 +1,36 @@
+<view class="container">
+  <h1>历史验光记录</h1>
+  
+  <view class="record-item" wx:for="{{records}}" wx:key="index">
+    <view class="record-header">
+      <view class="record-date">{{item.date}}</view>
+      <view class="record-name">{{item.name}}</view>
+    </view>
+    <view class="record-table">
+      <view class="table-row">
+        <view class="col col-project">球镜</view>
+        <view class="col col-eye">{{item.leftEye.sph}}</view>
+        <view class="col col-eye">{{item.rightEye.sph}}</view>
+      </view>
+      <view class="table-row">
+        <view class="col col-project">柱镜</view>
+        <view class="col col-eye">{{item.leftEye.cyl}}</view>
+        <view class="col col-eye">{{item.rightEye.cyl}}</view>
+      </view>
+      <view class="table-row">
+        <view class="col col-project">轴位</view>
+        <view class="col col-eye">{{item.leftEye.axis}}</view>
+        <view class="col col-eye">{{item.rightEye.axis}}</view>
+      </view>
+      <view class="table-row">
+        <view class="col col-project">瞳距</view>
+        <view class="col col-eye">{{item.pd.left}}</view>
+        <view class="col col-eye">{{item.pd.right}}</view>
+      </view>
+    </view>
+  </view>
+  
+  <view class="empty" wx:if="{{records.length === 0}}">
+    <text>暂无验光记录</text>
+  </view>
+</view>
