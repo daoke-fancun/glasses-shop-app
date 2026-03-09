@@ -1,16 +1,17 @@
 Page({
   data: {
+    currentTab: 'all',
     products: [
-      { name: '时尚光学眼镜', price: 299 },
-      { name: '防蓝光眼镜', price: 399 },
-      { name: '太阳镜', price: 199 },
-      { name: '隐形眼镜', price: 129 }
+      { name: '时尚光学眼镜', price: 299, category: 'frame' },
+      { name: '防蓝光镜片', price: 399, category: 'lens' },
+      { name: '太阳镜', price: 199, category: 'frame' },
+      { name: '隐形眼镜', price: 129, category: 'lens' }
     ]
   },
-  onLoad: function () {
-    console.log('首页加载');
-  },
-  onShow: function () {
-    // 页面显示时执行
+  // 关键的切换函数
+  switchTab: function(e) {
+    this.setData({
+      currentTab: e.currentTarget.dataset.type
+    })
   }
 })
